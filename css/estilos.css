@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    /* por si se agregan atributos en el futuro */
+    font-family: sans-serif;
+}
+
+div.contenedor-padre {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+div.panel-izquierdo {
+    padding: 7%;
+}
+
+div.titulo-contenedor {
+    margin-bottom: 20px; 
+}
+
+h1.titulo {
+    font-size: 50px;
+    color: #242942;
+}
+
+div.texto-debajo {
+    margin-bottom: 20px;
+    color: #5A5A61;
+}
+
+div.tres-chulos {
+    /* por si se agregan atributos en el futuro */
+    margin-bottom: 20px;
+}
+
+div.contenidos {
+    display: flex;
+    justify-items: center;
+    color: #5E5E6B;
+    margin-top: 10px;
+}
+
+div.checado {
+    margin-right: 15px;
+}
+
+form.formulario {
+
+}
+
+label.nombre {
+    color: #4E4F5F;
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #E5E5E5;
+    width: 350px;
+    height: 50px;
+    padding-left: 5%;
+}
+
+div.btn-sus {
+    margin-top: 10px;
+}
+
+button.btn {
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #232742;
+    background-color: #232742;
+    color: white;
+}
+
+button.btn:hover {
+    background: radial-gradient(#FF5479, #FF5E5F, #FF6740);
+    border: none;
+}
+
+/* panel derecho */
+div.panel-derecho {
+    /* por si se agregan atributos en el futuro */
+}
+
+/* media querys */
+/* Media query para pantallas de hasta 600px de ancho */
+@media screen and (max-width: 600px) {
+    div.contenedor-padre {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+    }
+
+    div.panel-izquierdo, div.panel-derecho {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    div.panel-derecho {
+        order: -1; /* Cambia el orden para que el panel derecho esté arriba */
+        margin-bottom: 20px; /* Espaciado inferior para separar los paneles */
+        display: flex;
+        justify-content: center;
+    }
+
+    h1.titulo {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+    }
+
+    input {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+
+    button.btn, button.btn:hover {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+}
+
+/* Media query para pantallas de 601px a 900px de ancho */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    div.contenedor-padre {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+    }
+
+    div.panel-izquierdo, div.panel-derecho {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    div.panel-derecho {
+        order: -1; /* Cambia el orden para que el panel derecho esté arriba */
+        margin-bottom: 20px; /* Espaciado inferior para separar los paneles */
+        display: flex;
+        justify-content: center;
+    }
+
+    h1.titulo {
+        font-size: 30px; /* Ajusta el tamaño de la fuente */
+    }
+
+    input {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+
+    button.btn, button.btn:hover {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+}
+
+
+
+

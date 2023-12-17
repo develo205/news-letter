@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    /* por si se agregan estilos en el futuro */
+    font-family: sans-serif;
+}
+
+div.contendor-padre {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+div.contenedor-medio {
+    border: 5px solid #E5E5E5;
+    border-radius: 20px;
+    padding: 4%;
+}
+
+div.contendo-chulo {
+    /* por si se agregan estilos en el futuro */
+    margin-bottom: 20px;
+}
+
+div.titulo-h1 {
+    /* por si se agregan estilos en el futuro */
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #242942;
+}
+
+div.texto {
+    margin-bottom: 15px;
+    color: #5A5A61;
+}
+
+
+
+button.btn-confirm {
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #232742;
+    background-color: #232742;
+    color: white;
+}
+
+button.btn-confirm:hover {
+    background: radial-gradient(#FF5479, #FF5E5F, #FF6740);
+    border: none;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media screen and (max-width: 600px) {
+    div.contendor-padre {
+        padding: 5%; /* Reduce el espacio alrededor del contenedor padre */
+    }
+
+    div.contenedor-medio {
+        padding: 3%; /* Reduce el espacio alrededor del contenedor medio */
+    }
+
+    h1 {
+        font-size: 30px; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    button.btn-confirm {
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+}
+
+/* Media query para pantallas de 601px a 900px de ancho */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    div.contenedor-padre {
+        padding: 8%; /* Ajusta el espacio alrededor del contenedor padre */
+    }
+
+    div.contenedor-medio {
+        padding: 6%; /* Ajusta el espacio alrededor del contenedor medio */
+    }
+
+    h1 {
+        font-size: 40px; /* Ajusta el tamaño de la fuente del título */
+    }
+
+    div.texto {
+        margin-bottom: 20px; /* Ajusta el espacio alrededor del texto */
+    }
+}
